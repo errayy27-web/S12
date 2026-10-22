@@ -1,0 +1,22 @@
+SS OIL - GELISTIRME KAYNAK PAKETI (APK DEGIL)
+
+Kaynak: kullanicinin gonderdigi SS_OIL_Siparis_Yeni_Surum.rar.
+
+Eklenenler:
+- Gecici diyalog controller'larinin kapatma animasyonu bitmeden dispose edilmemesi icin gecikmeli temizleme.
+- Siparis ekraninda Wrap(mainAxisSize:...) derleme hatasi duzeltildi.
+- SS OIL logo Android uygulama ikonu olarak eklendi.
+- Etiket listesi, 3 sablon, PDF, ayarlanabilir mm olculeri, guncel fiyat kontrolu.
+- Stok riski: 5 adet; 7 gunluk dogrulanmis ilk 200 satis verisi varsa 10 adet.
+- Tedarikci siparis gunleri kaydi (bildirim sistemi henuz yok).
+- Cok satanlar: 7 gunluk API olmadan tahmini veri gostermiyor.
+- Kasa: veri kaynaklari dogrulanmadigindan bos bilgi ekrani.
+
+ONEMLI SINIRLAR:
+- Flutter SDK bu calisma ortaminda bulunmadigindan 'flutter analyze' ve Android APK derlemesi yapilamadi.
+- Kasa.exe ve Dopuna entegrasyonu, odeme turleri ve gercek 7 gunluk satis API'si henuz tamamlanmadi.
+- Supabase/bulut senkronizasyonu henuz eklenmedi. Hicbir sunucu/veritabani degistirilmedi.
+- Kucuk etiket kagidinin fiziksel sayfa boyutu ve marjinleri baski testiyle ayarlanmalidir.
+- PDF'deki Turkce/Bosnakca ozel karakterlerin font destegi derlemede kontrol edilmelidir.
+- Etiket barkodunun fiziksel okunabilirligi gercek yazicida test edilmelidir.
+- Canli satis / stok veri kaynagi olmadan tam calisiyor denemez.
